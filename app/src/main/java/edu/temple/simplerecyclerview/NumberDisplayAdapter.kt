@@ -4,9 +4,10 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-// adapter, recycling is done by the methods themselves
+// adapter that creates views binds them to the screen, recycling is done by the methods themselves
 class NumberDisplayAdapter(private val numbers: IntArray) : RecyclerView.Adapter<NumberDisplayAdapter.NumberViewHolder>() {
 
+    // you could call things in this class if you want more behaviors from this view, but we dont
     class NumberViewHolder (val textView: TextView) : RecyclerView.ViewHolder (textView) {}
 
     // creates views
