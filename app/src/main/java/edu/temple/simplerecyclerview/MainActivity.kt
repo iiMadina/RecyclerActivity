@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         // the layoutManager allows the recyclerView to use the adapter
         recyclerView.layoutManager = LinearLayoutManager(this)
 
-        //TODO Step 4: Provide a RecyclerView.Adapter
+        val numArray = IntArray(20) {i -> (i + 1) * 5}
+        recyclerView.adapter = NumberDisplayAdapter(numArray)
     }
 }
